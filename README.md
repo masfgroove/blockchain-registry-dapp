@@ -1,4 +1,5 @@
 ⛓️ DApp de Registro Imutável: Fullstack Blockchain
+
 Este projeto é um ecossistema completo de registro descentralizado. Ele permite que os usuários gravem mensagens de forma imutável em uma rede blockchain privada, integrando um contrato inteligente em Solidity com uma interface React moderna.
 
 📸 Demonstração do Sistema
