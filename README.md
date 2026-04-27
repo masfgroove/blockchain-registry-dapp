@@ -3,22 +3,28 @@
 Este projeto é um ecossistema completo de registro descentralizado. Ele permite que os usuários gravem mensagens de forma imutável em uma rede blockchain privada, integrando um contrato inteligente em Solidity com uma interface React moderna.
 
 📸 Demonstração do Sistema
+
 Interface e-
 Interação do usuário através de uma interface limpa, conectada via MetaMask ao nó local do Hardhat.
 
 Registro e Confirmação
+
 Fluxo completo de assinatura de transação e confirmação de gravação imutável.
 
 Persistência de Dados
+
 Visualização dos registros recuperados diretamente do contrato inteligente.
 
 Monitoramento do Backend
+
 Logs em tempo real mostrando chamadas eth_calle interações com o contrato.
 
 🏗️ Arquitetura do Sistema
+
 O projeto utiliza um modelo de Monorepo para garantir a integridade entre o contrato e a interface:
 
 🖥️ Backend (Contratos Inteligentes)
+
 Localizado na pasta /backend, utilizando o framework Hardhat :
 
 Lógica Imutável : Contrato Registro.soldesenvolvido em Solidity para persistência de dados.
@@ -28,6 +34,7 @@ Infraestrutura Local : Nenhum RPC configurado no localhost:8545com Chain ID 3133
 Gestão de Testes : Utilização de contas pré-fundadas com 10.000 ETH para simulação de transações reais.
 
 🌐 Frontend (DApp)
+
 Localizado na pasta /frontend, desenvolvido com React + Vite :
 
 Comunicação Web3 : Integração via ethers.jsutilização BrowserProvidere Signer.
@@ -37,6 +44,7 @@ Consumo de ABI : Integração direta com os artistas gerados pelo Hardhat para e
 UX/UI : Tratamento de estados de transação ("Gravando...") e notificações de sucesso via interface.
 
 🛠️ Desafios Técnicos Solucionados
+
 Segurança em Ambiente de Teste : Tratamento de alertas de segurança do MetaMask/Blockaid para redes locais.
 
 Sincronização de Estado : Atualização da interface em tempo real após a mineração de novos blocos.
@@ -44,6 +52,7 @@ Sincronização de Estado : Atualização da interface em tempo real após a min
 Gestão de Ambiente : Configuração de safe.directoryno Git e organização de subdiretórios para evitar conflitos de dependências.
 
 🚀 Como Executar o Projeto
+
 Clonar ova:
 
 Bash
@@ -71,9 +80,11 @@ Adicione uma rede RPC customizada: http://127.0.0.1:8545com ID 31337 .
 Importe uma das chaves privadas geradas pelo comando npx hardhat node.
 
 💾 Finalizando no Git
+
 Para salvar essas melhorias, rode no seu terminal:
 
-Bash
 git add .
+git commit -m "Docs: Melhorando título e termos técnicos do README"
+git push origin main
 git commit -m "Docs: Melhorando título e termos técnicos do README"
 git push origin main
