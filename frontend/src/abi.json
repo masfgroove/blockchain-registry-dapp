@@ -1,0 +1,43 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_titulo", "type": "string" },
+      { "internalType": "string", "name": "_descricao", "type": "string" }
+    ],
+    "name": "criarRegistro",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "name": "itens",
+    "outputs": [
+      { "internalType": "string", "name": "titulo", "type": "string" },
+      { "internalType": "string", "name": "descricao", "type": "string" },
+      { "internalType": "address", "name": "autor", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "listarRegistros",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "string", "name": "titulo", "type": "string" },
+          { "internalType": "string", "name": "descricao", "type": "string" },
+          { "internalType": "address", "name": "autor", "type": "address" }
+        ],
+        "internalType": "struct Registro.Item[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
