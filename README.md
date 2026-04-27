@@ -1,9 +1,9 @@
-⛓️ Aplicativo descentralizado (DApp) de registro de blockchain fullstack
+⛓️ DApp de Registro Imutável: Fullstack Blockchain
 Este projeto é um ecossistema completo de registro descentralizado. Ele permite que os usuários gravem mensagens de forma imutável em uma rede blockchain privada, integrando um contrato inteligente em Solidity com uma interface React moderna.
 
 📸 Demonstração do Sistema
 Interface e-
-A interação do usuário com uma interface limpa, conectada via MetaMask ao nó local do Hardhat.
+Interação do usuário através de uma interface limpa, conectada via MetaMask ao nó local do Hardhat.
 
 Registro e Confirmação
 Fluxo completo de assinatura de transação e confirmação de gravação imutável.
@@ -18,7 +18,7 @@ Logs em tempo real mostrando chamadas eth_calle interações com o contrato.
 O projeto utiliza um modelo de Monorepo para garantir a integridade entre o contrato e a interface:
 
 🖥️ Backend (Contratos Inteligentes)
-Localizado na pasta /backend, utilizando capacete de segurança :
+Localizado na pasta /backend, utilizando o framework Hardhat :
 
 Lógica Imutável : Contrato Registro.soldesenvolvido em Solidity para persistência de dados.
 
@@ -31,7 +31,7 @@ Localizado na pasta /frontend, desenvolvido com React + Vite :
 
 Comunicação Web3 : Integração via ethers.jsutilização BrowserProvidere Signer.
 
-Consumo de ABI : Integração direta com os artistas elaborados do Hardhat para execução de métodos do contrato.
+Consumo de ABI : Integração direta com os artistas gerados pelo Hardhat para execução de métodos do contrato.
 
 UX/UI : Tratamento de estados de transação ("Gravando...") e notificações de sucesso via interface.
 
@@ -53,30 +53,26 @@ Bash
 cd backend
 npm install
 npx hardhat node
-# Em outro terminal, faça o deploy:
+Em outro terminal, faça o deploy:
+
+Bash
 npx hardhat run scripts/deploy.cjs --network localhost
 Sistema o Frontend:
 
 Bash
-cd frontend
+cd ../frontend
 npm install
 npm run dev
 MetaMask:
 
-Adicione uma rede RPC customizada: http://127.0.0.1:8545com ID 31337.
+Adicione uma rede RPC customizada: http://127.0.0.1:8545com ID 31337 .
 
 Importe uma das chaves privadas geradas pelo comando npx hardhat node.
 
-Próximos Passos (Dica para o Git)
-Agora que o texto está pronto:
-
-Abra o arquivo README.mdna raiz do seu VS Code.
-
-Apague tudo e cole esse texto acima.
-
-Salve e rode:
+💾 Finalizando no Git
+Para salvar essas melhorias, rode no seu terminal:
 
 Bash
 git add .
-git commit -m "Docs: Finalizando README com imagens e detalhes técnicos"
+git commit -m "Docs: Melhorando título e termos técnicos do README"
 git push origin main
